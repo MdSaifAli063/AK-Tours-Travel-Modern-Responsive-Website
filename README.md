@@ -14,6 +14,7 @@ A sleek, mobile-first travel website with a glassy UI, sticky translucent navbar
 - Live Demo: [YOUR_URL_HERE](https://ak-tours-travels.netlify.app/)
 - Preview:
 - ![image](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website/blob/2449ba4b972e48c80f00a1f81b986e17bb2df012/Screenshot%202025-09-08%20212942.png)
+- ![image](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website/blob/d8c789857e5020ce769252e19ba471e5b8865a8f/Screenshot%202025-09-08%20213036.png)
 
 ---
 
