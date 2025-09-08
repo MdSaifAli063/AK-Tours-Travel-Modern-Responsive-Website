@@ -80,7 +80,7 @@ Then visit:
    3) Theme and colors
     Edit CSS variables in style.css to quickly tweak the theme:
 
-   :root {
+     :root {
      --primary: #4CAF50;
      --accent: #2196F3;
      --text: #111827;
