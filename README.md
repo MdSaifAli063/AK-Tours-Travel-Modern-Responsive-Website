@@ -80,15 +80,15 @@ header.page-hero {
 3) Theme and colors
 Edit CSS variables in style.css to quickly tweak the theme:
 
-:root {
-  --primary: #4CAF50;
-  --accent: #2196F3;
-  --text: #111827;
-  --white: #ffffff;
-  --radius: 14px;
-  --shadow-md: 0 10px 25px rgba(0,0,0,.18);
-  /* ... */
-}
+   :root {
+     --primary: #4CAF50;
+     --accent: #2196F3;
+     --text: #111827;
+     --white: #ffffff;
+     --radius: 14px;
+     --shadow-md: 0 10px 25px rgba(0,0,0,.18);
+     /* ... */
+       }
 
 
 🖋️ Beautiful Fonts and Icons
