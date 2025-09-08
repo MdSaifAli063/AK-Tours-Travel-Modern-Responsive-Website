@@ -61,24 +61,24 @@ Then visit:
 
 ## 🛠️ Configuration
 
-### 1) Web3Forms (message.html)
-Replace the access key with your own:
+ ### 1) Web3Forms (message.html)
+   Replace the access key with your own:
 
-<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+   <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
 
 
 
-2) Bus background (hero)
-Home hero uses a bus image on the main section (#home in style.css).
-Complaints page hero uses the same bus background:
-header.page-hero {
-  background: url('https://c4.wallpaperflare.com/wallpaper/704/217/93/future-bus-computer-desktop-background-wallpaper-preview.jpg')
+   2) Bus background (hero)
+    Home hero uses a bus image on the main section (#home in style.css).
+    Complaints page hero uses the same bus background:
+    header.page-hero {
+    background: url('https://c4.wallpaperflare.com/wallpaper/704/217/93/future-bus-computer-desktop-background-wallpaper-preview.jpg')
              center/cover no-repeat fixed;
-}
+    }
 
 
-3) Theme and colors
-Edit CSS variables in style.css to quickly tweak the theme:
+   3) Theme and colors
+    Edit CSS variables in style.css to quickly tweak the theme:
 
    :root {
      --primary: #4CAF50;
@@ -93,55 +93,55 @@ Edit CSS variables in style.css to quickly tweak the theme:
 
 🖋️ Beautiful Fonts and Icons
 
-Google Fonts (example: Poppins + Inter)
-Add to main.html and message.html in :
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+   Google Fonts (example: Poppins + Inter)
+   Add to main.html and message.html in :
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
 
-In style.css:
-body { font-family: "Inter", "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-.logo { font-family: "Poppins", sans-serif; font-weight: 800; }
+   In style.css:
+   body { font-family: "Inter", "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+   .logo { font-family: "Poppins", sans-serif; font-weight: 800; }
 
-Tip: Use emojis for quick, lightweight icons in content (e.g., 🚌 ✈️ 🗺️).
+   Tip: Use emojis for quick, lightweight icons in content (e.g., 🚌 ✈️ 🗺️).
 
 🔧 Development Notes
 
-Navbar drawer and ESC-to-close accessible behavior are handled in script.js.
-Images use loading="lazy" where applicable.
-Destination thumbnails use aspect-ratio for consistent layout.
-The Complaints list displayed under message.html is stored locally in the browser (localStorage) for convenience.
+   Navbar drawer and ESC-to-close accessible behavior are handled in script.js.
+   Images use loading="lazy" where applicable.
+   Destination thumbnails use aspect-ratio for consistent layout.
+   The Complaints list displayed under message.html is stored locally in the browser (localStorage) for convenience.
 
 🌐 Deployment
 
-GitHub Pages
-Push repo to GitHub
-Settings → Pages → Deploy from branch → Select main branch / root
-Access at: [repo](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website)
-Netlify
-Drag-and-drop the repo folder or connect to your repo (build command not required)
-Vercel
-New Project → Import → Framework: “Other” → Output: root
+   GitHub Pages
+   Push repo to GitHub
+   Settings → Pages → Deploy from branch → Select main branch / root
+   Access at: [repo](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website)
+   Netlify
+   Drag-and-drop the repo folder or connect to your repo (build command not required)
+   Vercel
+   New Project → Import → Framework: “Other” → Output: root
 
 🧩 Roadmap (Ideas)
 
-Search and filter for destinations
-Pagination or carousel for destinations
-Multi-image upload to remote storage
-Dark/light theme toggle
-i18n (multi-language) support
+   Search and filter for destinations
+   Pagination or carousel for destinations
+   Multi-image upload to remote storage
+   Dark/light theme toggle
+   i18n (multi-language) support
 
 🙏 Credits
 
-Background bus photo: Wallpaperflare (check license for your use case)
-Other photos as referenced in HTML (e.g., Freepik, MiStay blog) — verify usage rights
-Icons: Emoji, Remix Icon / Font Awesome (CDNs above)
+   Background bus photo: Wallpaperflare (check license for your use case)
+   Other photos as referenced in HTML (e.g., Freepik, MiStay blog) — verify usage rights
+   Icons: Emoji, Remix Icon / Font Awesome (CDNs above)
 
 🤝 Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+   Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
 📜 License
 
-MIT — see the LICENSE file for details.
+   MIT — see the LICENSE file for details.
