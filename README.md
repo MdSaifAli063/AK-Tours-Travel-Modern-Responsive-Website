@@ -95,14 +95,14 @@ Then visit:
 
    Google Fonts (example: Poppins + Inter)
    Add to main.html and message.html in :
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
 
    In style.css:
-   body { font-family: "Inter", "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-   .logo { font-family: "Poppins", sans-serif; font-weight: 800; }
+      body { font-family: "Inter", "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      .logo { font-family: "Poppins", sans-serif; font-weight: 800; }
 
    Tip: Use emojis for quick, lightweight icons in content (e.g., 🚌 ✈️ 🗺️).
 
