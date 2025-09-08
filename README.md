@@ -12,7 +12,8 @@
 A sleek, mobile-first travel website with a glassy UI, sticky translucent navbar, parallax hero, animated destination cards, and an accessible complaints/reviews page.
 
 - Live Demo: [YOUR_URL_HERE](https://ak-tours-travels.netlify.app/)
-- Preview: add a screenshot at docs/screenshot.png (optional)
+- Preview:
+- ![image](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website/blob/2449ba4b972e48c80f00a1f81b986e17bb2df012/Screenshot%202025-09-08%20212942.png)
 
 ---
 
