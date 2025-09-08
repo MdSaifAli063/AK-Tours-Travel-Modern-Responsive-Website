@@ -104,23 +104,6 @@ In style.css:
 body { font-family: "Inter", "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
 .logo { font-family: "Poppins", sans-serif; font-weight: 800; }
 
-
-Icon set (Remix Icon or Font Awesome)
-Remix Icon:
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
-
-Usage:
-<i class="ri-bus-2-fill" aria-hidden="true"></i>
-
-Font Awesome:
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-Usage:
-<i class="fa-solid fa-bus"></i>
-
-
 Tip: Use emojis for quick, lightweight icons in content (e.g., 🚌 ✈️ 🗺️).
 
 🔧 Development Notes
