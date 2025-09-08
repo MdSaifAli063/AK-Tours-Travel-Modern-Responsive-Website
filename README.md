@@ -135,7 +135,7 @@ The Complaints list displayed under message.html is stored locally in the browse
 GitHub Pages
 Push repo to GitHub
 Settings → Pages → Deploy from branch → Select main branch / root
-Access at: https://YOUR_USER.github.io/YOUR_REPO/main.html
+Access at: [repo](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website)
 Netlify
 Drag-and-drop the repo folder or connect to your repo (build command not required)
 Vercel
