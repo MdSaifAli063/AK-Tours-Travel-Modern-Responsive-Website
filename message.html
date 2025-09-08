@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AK Tours & Travel — Complaints & Reviews</title>
+
+  <!-- Keep existing assets if used elsewhere -->
+  <script type="module" crossorigin src="./assets/index-7791fb8f.js"></script>
+  <link rel="stylesheet" href="./assets/index-9c0e71c5.css">
+
+  <style>
+    :root {
+      /* Brand palette (matches main) */
+      --brand-900: #0b0f14;
+      --brand-800: #111827;
+      --brand-700: #1f2937;
+      --brand-600: #374151;
+      --brand-500: #4b5563;
+      --brand-400: #9ca3af;
+      --brand-200: #e5e7eb;
+      --brand-100: #f3f4f6;
+
+      --primary: #4CAF50;
+      --primary-600: #45a049;
+      --accent: #2196F3;
+      --accent-600: #1976D2;
+      --warning: #FF9800;
+      --danger: #f44336;
+      --gold: #FFD700;
+
+      --text: #F9FAFB;
+      --muted: #9ca3af;
+      --white: #ffffff;
+
+      --radius: 14px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.18);
+      --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.25);
+
+      --nav-height: 64px;
+      --container: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      color: var(--text);
+      background: linear-gradient(180deg, #0b1324 0%, #0a0f1c 100%);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 1.2rem;
+    }
+
+    /* Skip to content */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--accent);
+      color: var(--white);
+      padding: 8px 14px;
+      border-radius: 0 0 8px 8px;
+      transition: top 0.2s ease;
+      z-index: 2000;
+    }
+    .skip-link:focus {
+      top: 0;
+      outline: none;
+    }
+
+    /* Navbar (matches main) */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: var(--nav-height);
+      background: rgba(0, 0, 0, 0.55);
+      -webkit-backdrop-filter: saturate(1.4) blur(10px);
+      backdrop-filter: saturate(1.4) blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .nav-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo {
+      color: var(--white);
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: clamp(1.1rem, 1.2vw + 0.8rem, 1.5rem);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 0 0 6px rgba(76, 175, 80, 0.18), 0 0 0 12px rgba(33, 150, 243, 0.12);
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0.25rem;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--white);
+      padding: 0.5rem 0.9rem;
+      border-radius: 10px;
+      transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+      opacity: 0.95;
+    }
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-1px);
+    }
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 38px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .menu-toggle:hover { background: rgba(255, 255, 255, 0.12); }
+    .menu-toggle:active { transform: scale(0.98); }
+    .menu-toggle span {
+      position: relative;
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 6px;
+      transition: transform 0.3s ease, opacity 0.2s ease;
+    }
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 6px;
+      transition: transform 0.3s ease, opacity 0.2s ease;
+    }
+    .menu-toggle span::before { transform: translateY(-7px); }
+    .menu-toggle span::after { transform: translateY(7px); }
+    .menu-toggle.active span { transform: rotate(45deg); }
+    .menu-toggle.active span::before { opacity: 0; }
+    .menu-toggle.active span::after { transform: rotate(-90deg); }
+
+    @media (max-width: 900px) {
+      .menu-toggle { display: inline-flex; }
+      .nav-links {
+        position: fixed;
+        inset: var(--nav-height) 0 0 0;
+        background: rgba(6, 11, 22, 0.96);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        display: grid;
+        align-content: start;
+        gap: 0.2rem;
+        padding: 1rem;
+        transform: translateY(-6px) translateX(100%);
+        transition: transform 0.3s ease;
+      }
+      .nav-links.open { transform: translateY(0) translateX(0); }
+      .nav-links li a {
+        padding: 0.9rem 1rem;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+      body.menu-open { overflow: hidden; }
+    }
+
+    /* Page header */
+    header.page-hero {
+      position: relative;
+      min-height: 220px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--white);
+      isolation: isolate;
+      overflow: hidden;
+      background: url('https://c4.wallpaperflare.com/wallpaper/704/217/93/future-bus-computer-desktop-background-wallpaper-preview.jpg') center/cover no-repeat;
+    }
+    header.page-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(5, 12, 24, 0.35) 0%, rgba(5, 12, 24, 0.75) 55%, rgba(5, 12, 24, 0.9) 100%);
+      z-index: -1;
+    }
+    .hero-inner {
+      padding: 2.2rem 1rem;
+      animation: fadeUp 0.8s ease both;
+    }
+    .hero-inner h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: clamp(1.6rem, 2.2vw + 1rem, 2.4rem);
+      letter-spacing: 0.6px;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    }
+    .hero-inner p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Section */
+    section {
+      padding: 2rem 0 3rem 0;
+    }
+    h2.section-title {
+      color: var(--white);
+      font-size: clamp(1.1rem, 1.2vw + 1rem, 1.6rem);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin: 0 0 1.25rem 0;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h2.section-title::after {
+      content: "";
+      display: inline-block;
+      width: 64px;
+      height: 4px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    /* Form container (glassy card like main) */
+    .form-container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: clamp(1rem, 2.5vw, 2rem);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: var(--shadow-md);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      color: var(--white);
+    }
+    .form-container h3 {
+      margin: 0 0 0.8rem 0;
+      font-size: 1.2rem;
+      color: var(--white);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+    @media (max-width: 720px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .form-group { margin-bottom: 1rem; }
+    label {
+      display: block;
+      margin: 0 0 0.45rem 0;
+      font-weight: 600;
+      color: var(--white);
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--white);
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+    input[type="text"]::placeholder,
+    textarea::placeholder { color: rgba(255, 255, 255, 0.6); }
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: rgba(76, 175, 80, 0.6);
+      box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.2);
+      outline: none;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Rating controls */
+    .rating-buttons {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      gap: 0.6rem;
+    }
+    @media (max-width: 720px) {
+      .rating-buttons { grid-template-columns: 1fr 1fr; }
+    }
+    .rating-btn {
+      padding: 0.8rem 1.1rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--white);
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+    .rating-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .rating-btn.active[data-rating="Very Good"] { background: linear-gradient(135deg, var(--gold), #ffea96); color: #111; border-color: rgba(255, 255, 255, 0.25); }
+    .rating-btn.active[data-rating="Good"] { background: linear-gradient(135deg, var(--primary), var(--primary-600)); color: #fff; }
+    .rating-btn.active[data-rating="Bad"] { background: linear-gradient(135deg, #ffb74d, var(--warning)); color: #111; }
+    .rating-btn.active[data-rating="Very Bad"] { background: linear-gradient(135deg, #e11d48, #ef4444); color: #fff; }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+      margin-top: 0.6rem;
+      gap: 6px;
+    }
+    .star {
+      color: #ddd;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .star.active.verygood { color: var(--gold); }
+    .star.active.good { color: #8BC34A; }
+    .star.active.bad { color: var(--warning); }
+    .star.active.verybad { color: var(--danger); }
+
+    /* File input */
+    .file-input-container { position: relative; margin-bottom: 0.4rem; }
+    .file-input-container input[type="file"] {
+      position: absolute; width: 0; height: 0; opacity: 0;
+    }
+    .file-input-label {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      background: linear-gradient(135deg, var(--accent), var(--accent-600));
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.25s ease, opacity 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .file-input-label:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    #imagePreview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 0.6rem;
+    }
+    #imagePreview img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease;
+    }
+    #imagePreview img:hover { transform: scale(1.05); }
+
+    /* Submit */
+    button[type="submit"] {
+      background: linear-gradient(135deg, var(--primary), var(--primary-600));
+      color: var(--white);
+      padding: 1rem 1.4rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      transition: transform 0.2s ease, box-shadow 0.25s ease, opacity 0.2s ease;
+      box-shadow: var(--shadow-sm);
+      margin-top: 0.5rem;
+    }
+    button[type="submit"]:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Result message */
+    #result {
+      display: none;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #d1fae5;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+      margin-top: 0.8rem;
+      text-align: center;
+    }
+    #result.visible { display: block; }
+
+    /* Complaints grid (display locally saved items) */
+    #complaints {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 1.2rem;
+    }
+    .complaint-card {
+      background: rgba(17, 24, 39, 0.9);
+      padding: 1.1rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .complaint-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .complaint-card h4 { margin: 0 0 0.5rem 0; font-size: 1.05rem; color: var(--white); }
+    .complaint-card p { margin: 0.25rem 0; color: rgba(255, 255, 255, 0.88); }
+    .complaint-images {
+      display: flex; gap: 8px; margin-top: 0.6rem; flex-wrap: wrap;
+    }
+    .complaint-images img {
+      width: 80px; height: 80px; object-fit: cover; border-radius: 8px; box-shadow: var(--shadow-sm);
+    }
+    .delete-btn {
+      margin-top: 0.6rem;
+      background: linear-gradient(135deg, #e11d48, #ef4444);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 0.6rem 0.9rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.25s ease, opacity 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .delete-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+    /* Micro animation */
+    @keyframes fadeUp {
+      from { transform: translateY(10px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#content" class="skip-link">Skip to content</a>
+
+  <nav role="navigation" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <div class="logo">AK World</div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="/main.html#home">Home</a></li>
+        <li><a href="/main.html#destinations">Destinations</a></li>
+        <li><a href="/message.html">Complaints & Reviews</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero" id="content">
+    <div class="container hero-inner">
+      <h1>Complaints & Reviews</h1>
+      <p>Tell us about your experience — your feedback helps us improve.</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="submit-complaint">
+    <div class="container">
+      <h2 id="submit-complaint" class="section-title">Submit a complaint or review</h2>
+
+      <div class="form-container" role="region" aria-labelledby="form-heading">
+        <h3 id="form-heading">AK Tours & Travel Complaint & Review Form</h3>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="complaintForm" novalidate>
+          <input type="hidden" name="access_key" value="c06bf812-cadf-48ac-b5ab-a28e3f504073">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="passenger-name">Passenger Name</label>
+              <input type="text" id="passenger-name" name="passenger_name" required placeholder="Enter passenger name" autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Mobile Number</label>
+              <input type="text" id="mobile" name="mobile_number" required
+                     placeholder="Enter 10-digit mobile number"
+                     pattern="\d{10}" maxlength="10" inputmode="numeric"
+                     oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="complaint">Your Complaint</label>
+            <textarea id="complaint" name="complaint" rows="4" required placeholder="Describe your complaint here..."></textarea>
+          </div>
+
+          <input type="hidden" id="rating" name="rating" value="">
+
+          <div class="form-group">
+            <label>Rating</label>
+            <div class="rating-buttons">
+              <button type="button" class="rating-btn" data-rating="Very Good" data-stars="5" aria-pressed="false">Very Good</button>
+              <button type="button" class="rating-btn" data-rating="Good" data-stars="4" aria-pressed="false">Good</button>
+              <button type="button" class="rating-btn" data-rating="Bad" data-stars="2" aria-pressed="false">Bad</button>
+              <button type="button" class="rating-btn" data-rating="Very Bad" data-stars="1" aria-pressed="false">Very Bad</button>
+            </div>
+            <div class="stars" id="starDisplay" aria-hidden="true">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="images">Upload Images (optional)</label>
+            <div class="file-input-container">
+              <input type="file" id="images" name="images" accept="image/*" multiple>
+              <label for="images" class="file-input-label">Choose Images</label>
+            </div>
+            <div id="imagePreview"></div>
+          </div>
+
+          <button type="submit" aria-label="Submit complaint">Submit Complaint</button>
+        </form>
+
+        <div id="result" role="status" aria-live="polite"></div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:1.6rem;">Recent complaints (local)</h2>
+      <div id="complaints" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <footer style="background: rgba(0,0,0,0.75); color: var(--white); padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.06);">
+    <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;">
+      <div>
+        <h3 style="margin:0 0 0.6rem 0;color:var(--primary);">Contact Us</h3>
+        <p>Email: contact@aktours.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Travel Street, City, Country</p>
+      </div>
+      <div>
+        <h3 style="margin:0 0 0.6rem 0;color:var(--primary);">About Us</h3>
+        <p>AK Tours & Travel is dedicated to providing the best travel experiences around the globe.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle + accessibility (same as main)
+    (function () {
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("primary-nav");
+
+      function closeMenu() {
+        document.body.classList.remove("menu-open");
+        nav.classList.remove("open");
+        toggle.classList.remove("active");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+
+      function openMenu() {
+        document.body.classList.add("menu-open");
+        nav.classList.add("open");
+        toggle.classList.add("active");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+
+      if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+          const isOpen = nav.classList.contains("open");
+          isOpen ? closeMenu() : openMenu();
+        });
+
+        nav.addEventListener("click", (e) => {
+          const target = e.target;
+          if (target.tagName === "A") closeMenu();
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeMenu();
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 900) closeMenu();
+        });
+      }
+    })();
+
+    // Form logic
+    (function () {
+      const form = document.getElementById('complaintForm');
+      const result = document.getElementById('result');
+      const ratingButtons = document.querySelectorAll('.rating-btn');
+      const ratingInput = document.getElementById('rating');
+      const starDisplay = document.getElementById('starDisplay');
+      const stars = starDisplay.querySelectorAll('.star');
+
+      const imageInput = document.getElementById('images');
+      const imagePreview = document.getElementById('imagePreview');
+      // Keep a base64 copy of selected images for local display
+      let selectedImagesBase64 = [];
+
+      ratingButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          ratingButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+          });
+          button.classList.add('active');
+          button.setAttribute('aria-pressed', 'true');
+          ratingInput.value = button.dataset.rating;
+
+          stars.forEach((star, index) => {
+            star.classList.remove('active', 'verygood', 'good', 'bad', 'verybad');
+            if (index < button.dataset.stars) {
+              star.classList.add('active', button.dataset.rating.toLowerCase().replace(' ', ''));
+            }
+          });
+        });
+      });
+
+      imageInput.addEventListener('change', () => {
+        imagePreview.innerHTML = '';
+        selectedImagesBase64 = [];
+        const files = imageInput.files;
+        if (!files || !files.length) return;
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            const src = e.target.result;
+            selectedImagesBase64.push(src);
+            const img = document.createElement('img');
+            img.src = src;
+            imagePreview.appendChild(img);
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+
+      // Local complaints store and renderer
+      const complaintsContainer = document.getElementById("complaints");
+      let complaints = JSON.parse(localStorage.getItem("complaints") || "[]");
+
+      function displayComplaints() {
+        if (!complaintsContainer) return;
+        complaintsContainer.innerHTML = "";
+        if (!complaints.length) {
+          const p = document.createElement("p");
+          p.style.color = "rgba(255,255,255,0.8)";
+          p.textContent = "No complaints submitted on this device yet.";
+          complaintsContainer.appendChild(p);
+          return;
+        }
+        complaints.forEach((c, index) => {
+          const card = document.createElement("div");
+          card.className = "complaint-card";
+          const ratingStars = (() => {
+            const map = { "Very Good": 5, "Good": 4, "Bad": 2, "Very Bad": 1 };
+            const n = map[c.rating] || 0;
+            let s = "";
+            for (let i = 0; i < 5; i++) s += i < n ? "★" : "☆";
+            return s;
+          })();
+          card.innerHTML = `
+            <h4>${c.name || "Anonymous"}</h4>
+            <p><strong>Mobile:</strong> ${c.mobile || "-"}</p>
+            <p><strong>Date:</strong> ${new Date(c.date).toLocaleString()}</p>
+            <p>${c.complaint || ""}</p>
+            <p class="rating-display" aria-label="Rating">${ratingStars}</p>
+          `;
+          if (c.images && c.images.length) {
+            const imagesWrap = document.createElement("div");
+            imagesWrap.className = "complaint-images";
+            c.images.forEach(src => {
+              const img = document.createElement("img");
+              img.src = src;
+              imagesWrap.appendChild(img);
+            });
+            card.appendChild(imagesWrap);
+          }
+          const del = document.createElement("button");
+          del.className = "delete-btn";
+          del.textContent = "Delete";
+          del.setAttribute("aria-label", `Delete complaint ${index + 1}`);
+          del.addEventListener("click", () => {
+            complaints.splice(index, 1);
+            localStorage.setItem("complaints", JSON.stringify(complaints));
+            displayComplaints();
+          });
+          card.appendChild(del);
+          complaintsContainer.appendChild(card);
+        });
+      }
+
+      displayComplaints();
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        formData.set('rating', ratingInput.value);
+
+        // Submit to Web3Forms as JSON
+        const json = JSON.stringify(Object.fromEntries(formData.entries()));
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        })
+          .then(async (response) => {
+            const res = await response.json();
+            if (response.status === 200) {
+              result.textContent = "Form submitted successfully";
+              result.classList.add('visible');
+
+              // Also save locally for on-page list
+              const localItem = {
+                name: formData.get('passenger_name') || "",
+                mobile: formData.get('mobile_number') || "",
+                complaint: formData.get('complaint') || "",
+                rating: formData.get('rating') || "",
+                images: selectedImagesBase64.slice(0, 6),
+                date: new Date().toISOString()
+              };
+              complaints.unshift(localItem);
+              localStorage.setItem("complaints", JSON.stringify(complaints));
+              displayComplaints();
+            } else {
+              console.log(response);
+              result.textContent = res.message || "Submission failed";
+              result.classList.add('visible');
+            }
+          })
+          .catch(error => {
+            console.error(error);
+            result.textContent = "Something went wrong!";
+            result.classList.add('visible');
+          })
+          .then(function () {
+            form.reset();
+            selectedImagesBase64 = [];
+            imagePreview.innerHTML = "";
+            // Reset rating UI
+            ratingButtons.forEach(btn => {
+              btn.classList.remove('active');
+              btn.setAttribute('aria-pressed', 'false');
+            });
+            stars.forEach(star => star.classList.remove('active', 'verygood', 'good', 'bad', 'verybad'));
+            setTimeout(() => {
+              result.textContent = "";
+              result.classList.remove('visible');
+            }, 3000);
+          });
+      });
+    })();
+  </script>
+</body>
+
+</html>
