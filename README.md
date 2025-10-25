@@ -1,5 +1,6 @@
 # 🚌 AK Tours & Travel — Modern Responsive Website
 
+A sleek, mobile-first travel website with a glassy UI, sticky translucent navbar, parallax hero, animated destination cards, and an accessible complaints/reviews page.
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
@@ -8,8 +9,6 @@
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-0ea5e9?style=for-the-badge" alt="License"/></a>
   <img src="https://img.shields.io/badge/PRs-Welcome-8b5cf6?style=for-the-badge" alt="PRs Welcome"/>
 </p>
-
-A sleek, mobile-first travel website with a glassy UI, sticky translucent navbar, parallax hero, animated destination cards, and an accessible complaints/reviews page.
 
 - Live Demo: [Link](https://ak-tours-travels.netlify.app/)
 - Preview:
