@@ -63,9 +63,9 @@ Then visit:
 
  ### 1) Web3Forms (message.html)
    Replace the access key with your own:
-
+  ```html
    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
-
+  ```
 
 
    2) Bus background (hero)
