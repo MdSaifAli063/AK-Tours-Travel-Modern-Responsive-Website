@@ -68,14 +68,16 @@ Then visit:
   ```
 
 
-   2) Bus background (hero)
+  ### 2) Bus background (hero)
+  
     Home hero uses a bus image on the main section (#home in style.css).
     Complaints page hero uses the same bus background:
+    ```css
     header.page-hero {
     background: url('https://c4.wallpaperflare.com/wallpaper/704/217/93/future-bus-computer-desktop-background-wallpaper-preview.jpg')
              center/cover no-repeat fixed;
     }
-
+    ```
 
    3) Theme and colors
     Edit CSS variables in style.css to quickly tweak the theme:
