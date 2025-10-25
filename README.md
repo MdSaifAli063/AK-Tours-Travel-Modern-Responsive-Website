@@ -10,6 +10,8 @@ A sleek, mobile-first travel website with a glassy UI, sticky translucent navbar
   <img src="https://img.shields.io/badge/PRs-Welcome-8b5cf6?style=for-the-badge" alt="PRs Welcome"/>
 </p>
 
+---
+
 - Live Demo: [Link](https://ak-tours-travels.netlify.app/)
 - Preview:
 - ![image](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website/blob/2449ba4b972e48c80f00a1f81b986e17bb2df012/Screenshot%202025-09-08%20212942.png)
