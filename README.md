@@ -34,10 +34,7 @@ A sleek, mobile-first travel website with a glassy UI, sticky translucent navbar
 
 ## 📂 Project Structure
 
-
-
 / ├─ main.html # Landing page (Home + Destinations) ├─ message.html # Complaints & Reviews page ├─ style.css # Shared styles (colors, layout, components) ├─ script.js # Navbar toggle & form/local storage logic └─ assets/ # Optional images, icons, and build assets
-
 
 Pages reference:
 - main.html includes: /assets/index-8443d3a0.js and /assets/index-8838ae46.css (keep if needed), plus style.css and script.js
@@ -69,19 +66,19 @@ Then visit:
 
 
   ### 2) Bus background (hero)
-  
-    Home hero uses a bus image on the main section (#home in style.css).
-    Complaints page hero uses the same bus background:
-    ```css
+  Home hero uses a bus image on the main section (#home in style.css).<br>
+   Complaints page hero uses the same bus background:
+   
+  ```css
     header.page-hero {
     background: url('https://c4.wallpaperflare.com/wallpaper/704/217/93/future-bus-computer-desktop-background-wallpaper-preview.jpg')
              center/cover no-repeat fixed;
     }
-    ```
+  ```
 
    3) Theme and colors
     Edit CSS variables in style.css to quickly tweak the theme:
-
+  ```css
      :root {
      --primary: #4CAF50;
      --accent: #2196F3;
@@ -91,7 +88,7 @@ Then visit:
      --shadow-md: 0 10px 25px rgba(0,0,0,.18);
      /* ... */
        }
-
+  ```
 
 🖋️ Beautiful Fonts and Icons
 
