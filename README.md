@@ -108,12 +108,12 @@ Then visit:
    ```
    Tip: Use emojis for quick, lightweight icons in content (e.g., 🚌 ✈️ 🗺️).
 
-🔧 Development Notes
+## 🔧 Development Notes
 
-   Navbar drawer and ESC-to-close accessible behavior are handled in script.js.
-   Images use loading="lazy" where applicable.
-   Destination thumbnails use aspect-ratio for consistent layout.
-   The Complaints list displayed under message.html is stored locally in the browser (localStorage) for convenience.
+   - Navbar drawer and ESC-to-close accessible behavior are handled in script.js.
+   - Images use loading="lazy" where applicable.
+   - Destination thumbnails use aspect-ratio for consistent layout.
+   - The Complaints list displayed under message.html is stored locally in the browser (localStorage) for convenience.
 
 🌐 Deployment
 
