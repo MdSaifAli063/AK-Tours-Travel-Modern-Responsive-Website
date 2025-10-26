@@ -102,9 +102,10 @@ Then visit:
    ```
 
    In style.css:
+   ```css
       body { font-family: "Inter", "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
       .logo { font-family: "Poppins", sans-serif; font-weight: 800; }
-
+   ```
    Tip: Use emojis for quick, lightweight icons in content (e.g., 🚌 ✈️ 🗺️).
 
 🔧 Development Notes
