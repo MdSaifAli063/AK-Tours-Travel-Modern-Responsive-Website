@@ -91,14 +91,15 @@ Then visit:
        }
   ```
 
-🖋️ Beautiful Fonts and Icons
+## 🖋️ Beautiful Fonts and Icons
 
-   Google Fonts (example: Poppins + Inter)
+   Google Fonts (example: Poppins + Inter)<br>
    Add to main.html and message.html in :
+   ```css
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-
+   ```
 
    In style.css:
       body { font-family: "Inter", "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
