@@ -126,13 +126,13 @@ Then visit:
    - Vercel
    - New Project → Import → Framework: “Other” → Output: root
 
-🧩 Roadmap (Ideas)
+## 🧩 Roadmap (Ideas)
 
-   Search and filter for destinations
-   Pagination or carousel for destinations
-   Multi-image upload to remote storage
-   Dark/light theme toggle
-   i18n (multi-language) support
+   - Search and filter for destinations
+   - Pagination or carousel for destinations
+   - Multi-image upload to remote storage
+   - Dark/light theme toggle
+   - i18n (multi-language) support
 
 🙏 Credits
 
