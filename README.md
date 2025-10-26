@@ -140,7 +140,7 @@ Then visit:
    - Other photos as referenced in HTML (e.g., Freepik, MiStay blog) — verify usage rights
    - Icons: Emoji, Remix Icon / Font Awesome (CDNs above)
 
-🤝 Contributing
+## 🤝 Contributing
 
    Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
