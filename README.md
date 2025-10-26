@@ -144,6 +144,6 @@ Then visit:
 
    Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
-📜 License
+## 📜 License
 
    MIT — see the LICENSE file for details.
