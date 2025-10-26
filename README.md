@@ -134,11 +134,11 @@ Then visit:
    - Dark/light theme toggle
    - i18n (multi-language) support
 
-🙏 Credits
+## 🙏 Credits
 
-   Background bus photo: Wallpaperflare (check license for your use case)
-   Other photos as referenced in HTML (e.g., Freepik, MiStay blog) — verify usage rights
-   Icons: Emoji, Remix Icon / Font Awesome (CDNs above)
+   - Background bus photo: Wallpaperflare (check license for your use case)
+   - Other photos as referenced in HTML (e.g., Freepik, MiStay blog) — verify usage rights
+   - Icons: Emoji, Remix Icon / Font Awesome (CDNs above)
 
 🤝 Contributing
 
