@@ -115,16 +115,16 @@ Then visit:
    - Destination thumbnails use aspect-ratio for consistent layout.
    - The Complaints list displayed under message.html is stored locally in the browser (localStorage) for convenience.
 
-🌐 Deployment
+## 🌐 Deployment
 
-   GitHub Pages
-   Push repo to GitHub
-   Settings → Pages → Deploy from branch → Select main branch / root
-   Access at: [repo](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website)
-   Netlify
-   Drag-and-drop the repo folder or connect to your repo (build command not required)
-   Vercel
-   New Project → Import → Framework: “Other” → Output: root
+   - GitHub Pages
+   - Push repo to GitHub
+   - Settings → Pages → Deploy from branch → Select main branch / root
+   - Access at: [repo](https://github.com/MdSaifAli063/AK-Tours-Travel-Modern-Responsive-Website)
+   - Netlify
+   - Drag-and-drop the repo folder or connect to your repo (build command not required)
+   - Vercel
+   - New Project → Import → Framework: “Other” → Output: root
 
 🧩 Roadmap (Ideas)
 
